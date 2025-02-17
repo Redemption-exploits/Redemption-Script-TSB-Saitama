@@ -15,7 +15,7 @@ local baseButton = hotbarFrame:FindFirstChild("1").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Move1"
+ToolName.Text = "Redempted Smack"
 
 
 local player = game.Players.LocalPlayer
@@ -33,7 +33,7 @@ local baseButton = hotbarFrame:FindFirstChild("2").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Move2"
+ToolName.Text = "Redeemed Stand"
 
 
 local player = game.Players.LocalPlayer
@@ -51,7 +51,7 @@ local baseButton = hotbarFrame:FindFirstChild("3").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Move3"
+ToolName.Text = "Quick Shove"
 
 
 local player = game.Players.LocalPlayer
@@ -69,7 +69,7 @@ local baseButton = hotbarFrame:FindFirstChild("4").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Move4"
+ToolName.Text = "One-Legged Uppercut"
 
 
 local Players = game:GetService("Players")
@@ -93,7 +93,7 @@ local function findGuiAndSetText()
 
             if textLabel then
 
-                textLabel.Text = "UltimateName"
+                textLabel.Text = "Wise Redemption"
 
             end
 
@@ -112,7 +112,7 @@ findGuiAndSetText()
 
 --[[Move 1]]
 
-local animationId = 10468665991
+local animationId = 18715845645
 
 
 local player = game.Players.LocalPlayer
@@ -170,7 +170,7 @@ end
 humanoid.AnimationPlayed:Connect(onAnimationPlayed)
 
 
-local animationId = 10466974800
+local animationId = 18716153127
 
 
 local player = game.Players.LocalPlayer
@@ -209,11 +209,11 @@ local startTime = 0
 
 Anim:Play()
 
-Anim:AdjustSpeed(1)
+Anim:AdjustSpeed(2)
 
 Anim.TimePosition = startTime
 
-Anim:AdjustSpeed(1)
+Anim:AdjustSpeed(2)
 
 
     end
@@ -228,7 +228,7 @@ end
 humanoid.AnimationPlayed:Connect(onAnimationPlayed)
 
 
-local animationId = 10471336737
+local animationId = 16552234590
 
 
 local player = game.Players.LocalPlayer
@@ -293,7 +293,7 @@ end
 humanoid.AnimationPlayed:Connect(onAnimationPlayed)
 
 
-local animationId = 12510170988
+local animationId = 18179181663
 
 
 local player = game.Players.LocalPlayer
@@ -1156,47 +1156,4 @@ Anim.TimePosition = startTime
 Anim:AdjustSpeed(1)
 
 --[[END OF EXECUTE ANIMS]]
-
---[[Garou Color Changer !DELETE IF NOT NEEDED!]]
-
---[[LEFT ARM COLORS]]
-
-local char = game.Players.LocalPlayer.Character
-getgenv().LArmCol = char['Left Arm'].ChildAdded:Connect(function(pp)
-if pp.Name == 'WaterPalm' then
-for i,v in pairs(pp:WaitForChild('ConstantEmit'):GetChildren()) do
-v.Color =
-ColorSequence.new{ColorSequenceKeypoint.new(0.00, 
-Color3.fromRGB(255, 0, 0)), -- Change Color (Red, Green, Blue)
-ColorSequenceKeypoint.new(1.00, 
-Color3.fromRGB(0, 0, 255))} -- Change Color (Red, Green, Blue)
-end
-
-pp:WaitForChild('WaterTrail').Color = 
-ColorSequence.new{ColorSequenceKeypoint.new(0.00, 
-Color3.fromRGB(255, 0, 0)), -- Change Color (Red, Green, Blue)
-ColorSequenceKeypoint.new(1.00, 
-Color3.fromRGB(0, 0, 255))} -- Change Color (Red, Green, Blue)
-
-end end)
---[[RIGHT ARM colors]]
-
-getgenv().RArmCol = char['Right Arm'].ChildAdded:Connect(function(pp)
-if pp.Name == 'WaterPalm' then
-for i,v in pairs(pp:WaitForChild('ConstantEmit'):GetChildren()) do
-v.Color =
-ColorSequence.new{ColorSequenceKeypoint.new(0.00, 
-Color3.fromRGB(255, 0, 0)), -- Change Color (Red, Green, Blue)
-ColorSequenceKeypoint.new(1.00, 
-Color3.fromRGB(0, 0, 255))} -- Change Color (Red, Green, Blue)
-end
-pp:WaitForChild('WaterTrail').Color = 
-ColorSequence.new{ColorSequenceKeypoint.new(0.00, 
-Color3.fromRGB(255, 0, 0)), -- Change Color (Red, Green, Blue) 
-ColorSequenceKeypoint.new(1.00, 
-Color3.fromRGB(0, 0, 255))} -- Change Color (Red, Green, Blue)
-
-end end)
-
---[[END OF GAROU COLORS]]
 
